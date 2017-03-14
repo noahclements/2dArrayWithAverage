@@ -29,8 +29,18 @@ public class J13PartThree {
               System.out.println(); // makes the output into a 5x4 grid shape
         }
         
-    // TODO figure out how to find average of an array column.
         
+		for(int avgCol = 0; avgCol < ints.length; avgCol ++) {
+			int sum = 0;
+			for(int avgRow = 0;  avgRow < ints[avgCol].length; avgRow++) {
+				sum = sum + ints[avgCol][avgRow];
+				
+				
+			}
+			System.out.println("The average of column #" + avgCol + " is: " + sum/ints[avgCol].length);
+				System.out.println();
+			
+		}
         
 		
 	}
